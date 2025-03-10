@@ -456,6 +456,12 @@ this.ScenarioInitialize(scenarioInfo);
 #line 152
  testRunner.Given("Click on the Finish on site", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
 #line hidden
+#line 153
+ testRunner.When("Click on the finish on site yes button", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
+#line hidden
+#line 154
+    testRunner.And("Click on the Dropdown Site action", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+#line hidden
             }
             this.ScenarioCleanup();
         }

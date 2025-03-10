@@ -94,7 +94,7 @@ namespace TestAutomation.Common
                 cap.AddAdditionalCapability(MobileCapabilityType.DeviceName, "Pixel 7");
                 cap.AddAdditionalCapability(MobileCapabilityType.PlatformName, "Android");
                 cap.AddAdditionalCapability(MobileCapabilityType.AutomationName, "uiautomator2");
-                cap.AddAdditionalCapability(MobileCapabilityType.App, "D:\\C# Automation Script\\UAT6.54.apk");                
+                cap.AddAdditionalCapability(MobileCapabilityType.App, "C:\\Personal document\\Automation script\\BEEMobile.apk");                
                 cap.AddAdditionalCapability("autoGrantPermissions", true);
                     cap.AddAdditionalCapability(MobileCapabilityType.NewCommandTimeout, 40000);
                     cap.AddAdditionalCapability(AndroidMobileCapabilityType.AndroidDeviceReadyTimeout, 40000);
@@ -1821,9 +1821,7 @@ namespace TestAutomation.Common
         {
             Actions actions = new Actions(dr);
 
-            
             actions.SendKeys(Keys.Tab).Perform();
-            
             actions.SendKeys(Keys.Tab).Perform();
 
           

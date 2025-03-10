@@ -495,17 +495,23 @@ namespace CPT_Mobile_Test
         public void WhenClickOnTheCameraButton()
         {
             ScRolltopageend();
+            wait(2);
             ClickEl(_MWF.Camera);
         }
 
         [When(@"Click on the Capture the photo")]
         public void WhenClickOnTheCaptureThePhoto()
         {
+            wait(2);
             ClickEl(_MWF.Capture);
+            ClickEl(_MWF.closecameracapture);
         }
         [When(@"Enter the Comments")]
         public void WhenEnterTheComments()
         {
+            WaitForJqueryAjax();
+            wait(4);
+            ScRolltopageend();
             ClickEl(_MWF.Comments);
             typeText(_MWF.Comments, getConfigVal("Comment"));
             dr.HideKeyboard();
@@ -525,6 +531,18 @@ namespace CPT_Mobile_Test
         public void GivenClickOnTheFinishOnSite()
         {
             ClickEl(_MWF.finishonsite);
+        }
+        [When(@"Click on the finish on site yes button")]
+        public void WhenClickOnTheFinishOnSiteYesButton()
+        {
+            ClickEl(_MWF.finshonsiteyesbutton);
+        }
+        [When(@"Click on the Dropdown Site action")]
+        public void WhenClickOnTheDropdownSiteAction()
+        {
+            ClickEl(_MWF.DropdownonSiteAction);
+            wait(3);
+            Actiondownandenter();
         }
 
 

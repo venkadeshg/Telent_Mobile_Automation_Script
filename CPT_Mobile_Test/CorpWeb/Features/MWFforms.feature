@@ -150,3 +150,5 @@ Scenario: MWF forms
 
 	#Finish on site
 	Given Click on the Finish on site
+	When Click on the finish on site yes button
+    And Click on the Dropdown Site action
